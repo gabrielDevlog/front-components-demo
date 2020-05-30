@@ -24,15 +24,15 @@ function startServiceA() {
 }
 
 // Unmount all services
-async function unmountAll() {
+function unmountAll() {
   const aRoot = document.getElementById("a-root");
   if (aRoot) {
-    await unmountFrom("service-a", aRoot);
+    unmountFrom("service-a", aRoot);
   }
 
   const bRoot = document.getElementById("b-root");
   if (bRoot) {
-    await unmountFrom("service-b", bRoot);
+    unmountFrom("service-b", bRoot);
   }
 }
 
