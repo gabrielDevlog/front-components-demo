@@ -2,22 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Service A</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css"
+    />
   </head>
   <body>
-    Front components demo
-    <!-- portal content -->
-    <div id="portal-counter"></div>
+    <div data-app id="docsify-main"></div>
 
-    <!-- service a get mounted here -->
-    <div id="a-root"></div>
-
-    <!-- service b get mounted here -->
-    <div id="b-root"></div>
-
+    <!-- load your services -->
     <script src="service-a/main.js"></script>
-    <script src="service-b/main.js"></script>
+    <!-- <script src="service-b/main.js"></script> -->
+
+    <!-- code specific to portal -->
     <script src="portal/main.js"></script>
+
+    <!-- docsify -->
+    <script>
+      window.$docsify = {
+        el: "#docsify-main",
+        executeScript: true,
+        loadSidebar: true,
+        subMaxLevel: 2,
+      };
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
   </body>
 </html>
