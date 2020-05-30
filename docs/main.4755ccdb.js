@@ -4,4 +4,4 @@ var n;!function(t,e){"object"==typeof exports&&"object"==typeof module?module.ex
 },{}],"MMFj":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.mount=u,exports.unmount=d;var e=require("front-components"),n=e.registerInstance,r=e.emit;n({serviceId:"service-a",mount:u,unmount:d});var t=document.createElement("h1");t.innerHTML="Service A";var o=document.createElement("button");o.onclick=function(){return r("from-a")},o.innerHTML="Emit";var i=document.createElement("div");i.innerHTML="events received: 0";var c=document.createElement("div");function u(e){return e.appendChild(c),Promise.resolve()}function d(e){return e.removeChild(c),Promise.resolve()}c.appendChild(t),c.appendChild(o),c.appendChild(i);
 },{"front-components":"Zat7"}]},{},["MMFj"], null)
-//# sourceMappingURL=/main.4755ccdb.js.map
+//# sourceMappingURL=main.4755ccdb.js.map

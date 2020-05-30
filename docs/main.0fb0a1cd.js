@@ -4,4 +4,4 @@ var n;!function(t,e){"object"==typeof exports&&"object"==typeof module?module.ex
 },{}],"gGin":[function(require,module,exports) {
 var e=require("front-components"),t=e.instantiateAt,n=e.on,o=0;function r(){document.getElementById("portal-counter").innerHTML="Events received in portal: ".concat(o)}n("from-a",function(){o++,r()});var c=document.getElementById("a-root");t("service-a",c);var a=document.getElementById("b-root");t("service-b",a),r();
 },{"front-components":"Zat7"}]},{},["gGin"], null)
-//# sourceMappingURL=/main.0fb0a1cd.js.map
+//# sourceMappingURL=main.0fb0a1cd.js.map
